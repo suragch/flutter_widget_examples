@@ -4,16 +4,24 @@ import 'package:flutter/material.dart';
 
 // the main() function is the starting point for every Flutter project
 void main() {
+  // runApp() is a builtin method that initializes the app layout
+  // MyApp() (defined below) is a widget that will be the root of our application.
+  runApp(MyApp());
+}
 
-  // calling this method (you guessed it) runs our app
-  runApp(
+// the root widget of our application
+class MyApp extends StatelessWidget {
 
-    // This time instead of passing in the Container widget, we will pass in
-    // the MaterialApp widget. It is already setup to make our app have the
-    // Material theme.
-    MaterialApp(
+  // The build method rebuilds the widget tree if there are any changes
+  // and allows hot reload to work.
+  @override
+  Widget build(BuildContext context) {
 
-      // The Scaffold widget lays out our home page for us so that we don't have to
+    // We are using the MaterialApp widget for our root layout. It is already
+    // setup to make our app have the Material theme.
+    return MaterialApp(
+
+      // The Scaffold widget lays out our home page for us
       home: Scaffold(
 
         // We will pass an AppBar widget to the appBar property of Scaffold
@@ -29,19 +37,27 @@ void main() {
         body: myWidget(),
 
       ),
-    ),
-  );
+    );
+  }
 }
 
 // uncomment whichever version of myWidget() that you want to run
 
-// Text
+// Container
 
 Widget myWidget() {
-  return Text(
-    "Hello, World!",
+  return Container(
+    color: Colors.green, // <-- change this
   );
 }
+
+// Text
+
+//Widget myWidget() {
+//  return Text(
+//    "Hello, Flutter!",
+//  );
+//}
 
 // TextStyle
 
@@ -137,7 +153,3 @@ Widget myWidget() {
 //    },
 //  );
 //}
-
-
-
-
