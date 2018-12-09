@@ -1,6 +1,6 @@
 # Flutter widget examples
 
-This Flutter project provides the supporting code for the tutorial [First steps with Flutter: Exploring widgets](https://pusher.com/tutorials?q=First%20steps%20with%20Flutter:%20Exploring%20widgets). Check it out for more details.
+This Flutter project provides the supporting code for the tutorial [First steps with Flutter: Exploring widgets](https://pusher.com/tutorials/flutter-widgets). Check it out for more details.
 
 Flutter has a reputation of having a steep learning curve. If you take little steps, though, it isn't that difficult. By playing around with simple examples like the ones here, you will be up and running in no time.
 
